@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class DetailsScreen extends StatelessWidget {
   final String title;
@@ -46,9 +47,12 @@ class DetailsScreen extends StatelessWidget {
             children: [
               Text(
                 title,
-                style: TextStyle(
-                  color: titleColor,
-                  fontSize: 40,
+                style: GoogleFonts.anton(
+                  textStyle: TextStyle(
+                    color: titleColor,
+                    fontSize: 40,
+                    fontWeight: FontWeight.w900,
+                  ),
                 ),
               ),
               const SizedBox(
@@ -80,9 +84,11 @@ class DetailsScreen extends StatelessWidget {
               ),
               Text(
                 desc,
-                style: TextStyle(
-                  color: textColor,
-                  fontSize: 30,
+                style: GoogleFonts.dosis(
+                  textStyle: TextStyle(
+                    color: textColor,
+                    fontSize: 20,
+                  ),
                 ),
               ),
             ],
